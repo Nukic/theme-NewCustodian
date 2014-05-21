@@ -121,7 +121,7 @@
 });
     </script>
 
-    <script type="text/javascript" src="{{ uri static_file="assets/js/libs/jquery.socialshareprivacy.js" }}"></script>
+    <script type="text/javascript" src="{{ uri static_file="_js/libs/jquery.socialshareprivacy.js" }}"></script>
 
     <script type="text/javascript">
     jQuery(document).ready(function($){
@@ -130,21 +130,21 @@
             services: {
                   facebook: {
                     'app_id': '118901678281903',
-                    'dummy_img': '{{ uri static_file="assets/img/icon-soc-bar-fb.png" }}'
+                    'dummy_img': '{{ uri static_file="_img/icon-soc-bar-fb.png" }}'
                   }, 
                     twitter: {
-                        'dummy_img': '{{ uri static_file="assets/img/icon-soc-bar-tw.png" }}',
+                        'dummy_img': '{{ uri static_file="_img/icon-soc-bar-tw.png" }}',
                         'related': {{ json_encode(implode(',', $related)) }}
                     },
                     gplus: {
                         'display_name': 'Google Plus',
-                        'dummy_img': '{{ uri static_file="assets/img/icon-soc-bar-gplus.png" }}'
+                        'dummy_img': '{{ uri static_file="_img/icon-soc-bar-gplus.png" }}'
                     }
             },
                 'cookie_path': '/',
                 'cookie_domain': document.location.host,
                 'cookie_expires': 365,
-                'css_path' : '{{ uri static_file="assets/js/libs/socialshareprivacy/socialshareprivacy.css" }}',
+                'css_path' : '{{ uri static_file="_js/libs/socialshareprivacy/socialshareprivacy.css" }}',
                 'settings_perma': 'Activate button permanently',
                 'info_button': ' The sharing buttons can transmit usage data to Facebook, Twitter or Google. We have therefore disabled it by default. Please turn it on to use them.'        
         }); 
